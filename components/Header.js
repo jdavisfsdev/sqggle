@@ -6,16 +6,16 @@ import { LogoutIcon } from '@heroicons/react/solid';
 function Header() {
   const router = useRouter();
   return (
-    <header className="sticky bg-yellow-200 z-50 grid grid-cols-3 items-center justify-between shadow-md text-red-400 font-architect">
+    <header className="sticky bg-yellow-100 z-50 grid grid-cols-3 items-center justify-between shadow-md text-red-400 font-architect">
       <div
         onClick={() => router.push('/ ')}
         className="relative drop-shadow-lg  flex items-center cursor-pointer text-6xl font-semibold  p-5 hover:scale-105 transition transform duration-150 ease-out"
       >
-        SQGGLE
+        <p>SQGGLE</p>
       </div>
 
       <div className="text-4xl text-center py-4 items-center">
-        <p className=""> An Online Drawing Prompter</p>
+        <p className=""> A 30 Second Drawing Competition</p>
       </div>
 
       <div className="flex items-center justify-end px-4">
