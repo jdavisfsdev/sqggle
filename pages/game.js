@@ -5,7 +5,7 @@ import { createScene } from '../utils/prompt';
 
 function Game() {
   const [scene, setScene] = useState('');
-  const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
     const scene = createScene();
@@ -14,9 +14,9 @@ function Game() {
 
   useEffect(() => {
     let interval = null;
-    if (seconds < 45) {
+    if (seconds > 0) {
       interval = setInterval(() => {
-        setSeconds((seconds) => seconds + 1);
+        setSeconds((seconds) => seconds - 1);
       }, 1000);
     } else {
       return;
@@ -39,7 +39,7 @@ function Game() {
             <Timer seconds={seconds} />
           </div>
           <div className="text-5xl ml-20 mt-5 w-[600px] h-[200px] bg-green-500 p-10 border-2 rounded-full text-center">
-            {(seconds < 5 && <h1 className="">{scene}</h1>) || (
+            {(seconds > 0 && <h1 className="">{scene}</h1>) || (
               <h1>Time is up!</h1>
             )}
           </div>
