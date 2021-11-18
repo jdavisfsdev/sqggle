@@ -5,7 +5,7 @@ function Timer() {
 
   useEffect(() => {
     let interval = null;
-    if (seconds < 30) {
+    if (seconds < 45) {
       interval = setInterval(() => {
         setSeconds((seconds) => seconds + 1);
       }, 1000);
