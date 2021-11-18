@@ -16,7 +16,7 @@ export default function Home() {
 
       <Header />
 
-      <main>
+      <main className="bg-blue-200 h-screen">
         <Welcome />
       </main>
     </div>
