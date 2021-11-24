@@ -15,7 +15,7 @@ function Header() {
       </div>
 
       <div className="text-4xl text-center py-4 items-center">
-        <p className=""> A 30 Second Drawing Competition</p>
+        <p className=""> A One Minute Drawing Competition</p>
       </div>
 
       <div className="flex items-center justify-end px-4">
